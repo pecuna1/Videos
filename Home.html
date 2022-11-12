@@ -9,11 +9,16 @@
  
 <body>
   <center>
-  <h1 style="color: white; font-family: cursive;">🍿Free Movies🍿</h1>
+  <h1 style="color: white; font-family: Curse; text-decoration: underline;">🍿Free Movies🍿</h1>
   <p style="color:white; font-family: 'Times New Roman', Times, serif">Type in here to sugget movies you want added here. <br>(Not Functioning Yet)</p>
-  <form><input></input></form>
-  <p style="color:white; font-weight: bold; font-family: cursive; text-decoration: underline; font-size: 20px">Movie List</p>
-  <a href="./subpages/American_Psycho.html"><p style="color: white;" >American Psycho</p></a>
+  <form>
+  <input>
+  <button type="submit">Submit</button>
+  </form>
+  <p style="color:white; font-weight: bold; font-family: Curse; text-decoration: underline; font-size: 20px">Movie List</p>
+  <!--Movie List-->
+  <a style="text-decoration: none;" href="./subpages/American_Psycho.html"><p class="size" style="color: white;" title="(2000) 'American Psycho' Directed by Mary Harron">🔪 American Psycho</p></a>
+  <a style="text-decoration: none;" href="./subpages/The_Wolf_of_Wall_Street.html"><p class="size" style="color: white;" title="(2013) 'The Wolf of Wall Street' Directed by Martin Scorsese">💵 The Wolf of Wall Street</p></a>
   </center>
 </body> 
   
@@ -21,5 +26,15 @@
   body {
     background-color: black; 
   }
+  
+  .size:hover{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  @font-face { 
+    font-family: Curse; src: url('./assets/fonts/comic.ttf');
+  }
+
 </style>
 </html>
