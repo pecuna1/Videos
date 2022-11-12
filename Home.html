@@ -10,9 +10,9 @@
 <body>
   <center>
   <h1 style="color: white; font-family: Curse; text-decoration: underline;">🍿Free Movies🍿</h1>
-  <p style="color:white; font-family: 'Times New Roman', Times, serif">Type in here to sugget movies you want added here. <br>(Not Functioning Yet)</p>
-  <form>
-  <input>
+  <p style="color:white; font-family: 'Times New Roman', Times, serif">Type in here to sugget movies you want added here. <br>(Not Guaranteed)</p>
+  <form action="https://sheetdb.io/api/v1/kk8jqnjuctz18" method="POST" id="sheetdb-form">
+  <input name="data[Suggestion]">
   <button type="submit">Submit</button>
   </form>
   <p style="color:white; font-weight: bold; font-family: Curse; text-decoration: underline; font-size: 20px">Movie List</p>
@@ -37,4 +37,20 @@
   }
 
 </style>
+
+<script>
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+      // you can put any JS code here
+      alert('submitted')
+    });
+  });
+</script>
 </html>
