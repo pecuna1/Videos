@@ -42,16 +42,16 @@
   <!--S02-->
     <form>
       <select class="CS02" id="S02">
-        <option value="1" selected style="text-align: center;">S02E01 ""</option>
-        <option value="2" style="text-align: center;">S02E02 ""</option>
-        <option value="3" style="text-align: center;">S02E03 ""</option>
-        <option value="4" style="text-align: center;">S02E04 ""</option>
-        <option value="5" style="text-align: center;">S02E05 ""</option>
-        <option value="6" style="text-align: center;">S02E06 ""</option>
-        <option value="7" style="text-align: center;">S02E07 ""</option>
-        <option value="8" style="text-align: center;">S02E08 ""</option>
-        <option value="9" style="text-align: center;">S02E09 ""</option>
-        <option value="10" style="text-align: center;">S02E10 ""</option>
+        <option value="1" selected style="text-align: center;">S02E01 "Switch"</option>
+        <option value="2" style="text-align: center;">S02E02 "Cobbler"</option>
+        <option value="3" style="text-align: center;">S02E03 "Amarillo"</option>
+        <option value="4" style="text-align: center;">S02E04 "Gloves Off"</option>
+        <option value="5" style="text-align: center;">S02E05 "Rebecca"</option>
+        <option value="6" style="text-align: center;">S02E06 "Bali Ha'i"</option>
+        <option value="7" style="text-align: center;">S02E07 "Inflatable"</option>
+        <option value="8" style="text-align: center;">S02E08 "Fifi"</option>
+        <option value="9" style="text-align: center;">S02E09 "Nailed"</option>
+        <option value="10" style="text-align: center;">S02E10 "Klick"</option>
       </select>
     </form>
   
@@ -82,6 +82,8 @@
 document.getElementById("S02").style.display = "none";
 
 //Paths
+ 
+  //Seasons Dropdown
   var menuS = document.getElementById("Seasons");
   menuS.addEventListener("change", generateDataS);
 
@@ -96,6 +98,7 @@ document.getElementById("S02").style.display = "none";
   }
  }
 
+  //S01
   var menu1 = document.getElementById("S01");
   menu1.addEventListener("change", generateData);
 
@@ -106,10 +109,8 @@ document.getElementById("S02").style.display = "none";
       path12();
    } else if (menu1.value == '3') {
       path13();
-      document.getElementById("S02").style.display = "none";
    } else if (menu1.value == '4') {
       path14();
-      document.getElementById("S02").style.display = "block";
    } else if (menu1.value == '5') {
       path15();
    } else if (menu1.value == '6') {
@@ -125,36 +126,37 @@ document.getElementById("S02").style.display = "none";
    } 
   }
 
+  //S02
   var menu2 = document.getElementById("S02");
   menu2.addEventListener("change", generateData2);
 
   function generateData2() {
     if (menu2.value == '1') {
-      path11();
+      path21();
    } else if (menu2.value == '2') {
-      path12();
+      path22();
    } else if (menu2.value == '3') {
-      path13();
-      document.getElementById("S02").style.display = "none";
+      path23();
    } else if (menu2.value == '4') {
-      path14();
-      document.getElementById("S02").style.display = "block";
+      path24();
    } else if (menu2.value == '5') {
-      path15();
+      path25();
    } else if (menu2.value == '6') {
-      path16();
+      path26();
    } else if (menu2.value == '7') {
-      path17();
+      path27();
    } else if (menu2.value == '8') {
-      path18();
+      path28();
    } else if (menu2.value == '9') {
-      path19();
+      path29();
    } else if (menu2.value == '10') {
-      path110();
+      path210();
    } 
   }
 
 //Path Functions
+  
+  //S01
   function path11() {
     document.getElementById('Player').src = 'https://drive.google.com/file/d/1AVLArNtixJylSc64hYLi8Occ1fwLeTvk/preview';
   }
@@ -185,7 +187,37 @@ document.getElementById("S02").style.display = "none";
   function path110() {
     document.getElementById('Player').src = 'https://drive.google.com/file/d/1CV1dml2RNMIOMcA8_4rmJmb8AMUTvki2/preview';
   }
-
+  //S02
+  function path21() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1sOJDuCXT9x5Gi27rr-bQybwoWjmrICg-/preview';
+  }
+  function path22() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/16XeawsYLEqmFjV5IKtj89U-ahBMBICZ8/preview';
+  }
+  function path23() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1V_Hr2Ca4VwDg4ioLb5yTqDPw8Ya24XLq/preview';
+  }
+  function path24() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1gtlcFaNxA_Hp2dqczomxtXzQPP9WFUM4/preview';
+  }
+  function path25() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/16iiEikT1-aa0CF_zOgo9CZBidxDg7HGf/preview';
+  } 
+  function path26() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/19ykYS1tn4Vh3R6AeLK4bAM5laqIfzXx3/preview';
+  }
+  function path27() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1lMaDL102g7iZIpFTr6isl4mc7OJmScUh/preview';
+  }
+  function path28() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1NcvH1R78GHSc1mC9v9DxT7Byv73KpHcb/preview';
+  }
+  function path29() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1q43JWvr2nqjSII7vHtYPKpjrxiQLY9VP/preview';
+  }
+  function path210() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1lXURf4brT9secR3MB_OzwW0VXeM4_Mec/preview';
+  }
 </script>
 </html>
  
