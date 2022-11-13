@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<!--Head-->
+<head>
+  <link rel="shortcut icon" href="../assets/images/icon.png">
+  <title>
+    Better Call Saul
+  </title>
+</head>
+
+<!--HTML-->
+<body>
+<center>
+    <iframe id="Player" src="https://drive.google.com/file/d/1AVLArNtixJylSc64hYLi8Occ1fwLeTvk/preview" width="1600" height="800"></iframe>
+    
+  <!--Season Selection-->
+    <form>
+      <select id="OS01">
+        <option value="1" style="text-align: center;" selected>Season 1</option>
+        <option value="2" style="text-align: center;">Season 2</option>
+        <option disabled style="text-align: center;">More Seasons coming soon</option>
+      </select>
+    </form>
+    
+  <!--S01-->
+    <form>
+      <select class="CS01" id="S01">
+        <option value="1" selected style="text-align: center;">S01E01 "Uno"</option>
+        <option value="2" style="text-align: center;">S01E02 "Mijo"</option>
+        <option value="3" style="text-align: center;">S01E03 "Nacho"</option>
+        <option value="4" style="text-align: center;">S01E04 "Hero"</option>
+        <option value="5" style="text-align: center;">S01E05 "Alpine Shepherd Boy"</option>
+        <option value="6" style="text-align: center;">S01E06 "Five-O"</option>
+        <option value="7" style="text-align: center;">S01E07 "Bingo"</option>
+        <option value="8" style="text-align: center;">S01E08 "Rico"</option>
+        <option value="9" style="text-align: center;">S01E09 "Pimento"</option>
+        <option value="10" style="text-align: center;">S01E10 "Marco"</option>
+      </select>
+    </form>
+   
+  <!--S02-->
+    <form>
+      <select class="CS02" id="S02">
+        <option value="1" selected style="text-align: center;">S02E01 ""</option>
+        <option value="2" style="text-align: center;">S02E02 ""</option>
+        <option value="3" style="text-align: center;">S02E03 ""</option>
+        <option value="4" style="text-align: center;">S02E04 ""</option>
+        <option value="5" style="text-align: center;">S02E05 ""</option>
+        <option value="6" style="text-align: center;">S02E06 ""</option>
+        <option value="7" style="text-align: center;">S02E07 ""</option>
+        <option value="8" style="text-align: center;">S02E08 ""</option>
+        <option value="9" style="text-align: center;">S02E09 ""</option>
+        <option value="10" style="text-align: center;">S02E10 ""</option>
+      </select>
+    </form>
+  
+  <!--Text-->
+    <p style="color:white; font-family: 'Times New Roman', Times, serif;">If you are on Mobile or want to go Fullscreen,<br>download the Google Drive app and click the "Pop-Out" button on the top-right corner of the video player.</p><br>
+    <a href="../Home.html"><p style="color:white; text-decoration:underline;" class="size">🏡Home</p></a>  
+
+</center>
+</body> 
+  
+<!--CSS-->
+<style>
+    body {
+      background-color: black; 
+    }
+
+    .size:hover{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+</style>
+
+<!--Java-->
+<script>
+
+//Paths
+  var menu = document.getElementById("S01");
+  menu.addEventListener("change", generateData);
+
+  function generateData(event) {
+    if (menu.value == '1') {
+      path11();
+   } else if (menu.value == '2') {
+      path12();
+   } else if (menu.value == '3') {
+      path13();
+   } else if (menu.value == '4') {
+      path14();
+   } else if (menu.value == '5') {
+      path15();
+   } else if (menu.value == '6') {
+      path16();
+   } else if (menu.value == '7') {
+      path17();
+   } else if (menu.value == '8') {
+      path18();
+   } else if (menu.value == '9') {
+      path19();
+   } else if (menu.value == '10') {
+      path110();
+   } 
+  }
+
+//Path Functions
+  function path11() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1AVLArNtixJylSc64hYLi8Occ1fwLeTvk/preview';
+  }
+  function path12() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1Ba2gsMssJTFfP4DGF7JRFe1_mbxC0DL-/preview';
+  }
+  function path13() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1VFtYNC_ubGX4544mwyJ28ffru_Hpssas/preview';
+  }
+  function path14() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/16gImBE2KyuzwEIPmI4X3_TyejEj5SdT5/preview';
+  }
+  function path15() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1hG_HZQQ44KUa0U5shL3DjoAKVnvSS5-_/preview';
+  } 
+  function path16() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1wGXz7X5uAD8ucZ9sLO_3Z-rbsHe_dVyp/preview';
+  }
+  function path17() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1Saw50_mpby7_JDNWyXK9siR9qhJp4HFu/preview';
+  }
+  function path18() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/10OoACXTzOV_ZzKpijVulvkDcfyESBFP5/preview';
+  }
+  function path19() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1ll8OODRLwm-jfvrLEsekTw_9bDmZuMfi/preview';
+  }
+  function path110() {
+    document.getElementById('Player').src = 'https://drive.google.com/file/d/1CV1dml2RNMIOMcA8_4rmJmb8AMUTvki2/preview';
+  }
+
+</script>
+</html>
+ 
