@@ -16,7 +16,7 @@
     
   <!--Season Selection-->
     <form>
-      <select id="OS01">
+      <select id="Seasons">
         <option value="1" style="text-align: center;" selected>Season 1</option>
         <option value="2" style="text-align: center;">Season 2</option>
         <option disabled style="text-align: center;">More Seasons coming soon</option>
@@ -77,31 +77,79 @@
 
 <!--Java-->
 <script>
+  
+//Onstart Script
+document.getElementById("S02").style.display = "none";
 
 //Paths
-  var menu = document.getElementById("S01");
-  menu.addEventListener("change", generateData);
+  var menuS = document.getElementById("Seasons");
+  menuS.addEventListener("change", generateDataS);
 
-  function generateData(event) {
-    if (menu.value == '1') {
+  function generateDataS() {
+    if (menuS.value == '1') {
+      document.getElementById("S02").style.display = "none";
+      document.getElementById("S01").style.display = "block";
+
+   } else if (menuS.value == '2') {
+      document.getElementById("S01").style.display = "none";    
+      document.getElementById("S02").style.display = "block";
+  }
+ }
+
+  var menu1 = document.getElementById("S01");
+  menu1.addEventListener("change", generateData);
+
+  function generateData() {
+    if (menu1.value == '1') {
       path11();
-   } else if (menu.value == '2') {
+   } else if (menu1.value == '2') {
       path12();
-   } else if (menu.value == '3') {
+   } else if (menu1.value == '3') {
       path13();
-   } else if (menu.value == '4') {
+      document.getElementById("S02").style.display = "none";
+   } else if (menu1.value == '4') {
       path14();
-   } else if (menu.value == '5') {
+      document.getElementById("S02").style.display = "block";
+   } else if (menu1.value == '5') {
       path15();
-   } else if (menu.value == '6') {
+   } else if (menu1.value == '6') {
       path16();
-   } else if (menu.value == '7') {
+   } else if (menu1.value == '7') {
       path17();
-   } else if (menu.value == '8') {
+   } else if (menu1.value == '8') {
       path18();
-   } else if (menu.value == '9') {
+   } else if (menu1.value == '9') {
       path19();
-   } else if (menu.value == '10') {
+   } else if (menu1.value == '10') {
+      path110();
+   } 
+  }
+
+  var menu2 = document.getElementById("S02");
+  menu2.addEventListener("change", generateData2);
+
+  function generateData2() {
+    if (menu2.value == '1') {
+      path11();
+   } else if (menu2.value == '2') {
+      path12();
+   } else if (menu2.value == '3') {
+      path13();
+      document.getElementById("S02").style.display = "none";
+   } else if (menu2.value == '4') {
+      path14();
+      document.getElementById("S02").style.display = "block";
+   } else if (menu2.value == '5') {
+      path15();
+   } else if (menu2.value == '6') {
+      path16();
+   } else if (menu2.value == '7') {
+      path17();
+   } else if (menu2.value == '8') {
+      path18();
+   } else if (menu2.value == '9') {
+      path19();
+   } else if (menu2.value == '10') {
       path110();
    } 
   }
